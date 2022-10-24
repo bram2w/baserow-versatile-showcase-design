@@ -54,7 +54,7 @@
 
     .topic-list {
       .topic-list-body {
-        .topic-list-item {
+        tr.topic-list-item {
           border-color: $border_color;
           &:nth-child(odd) {
             background: transparent;
