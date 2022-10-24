@@ -1,0 +1,29 @@
+.custom-homepage-columns {
+  row-gap: 32px;
+  .col {
+    .topic-list {
+      .topic-list-body {
+        .topic-list-item {
+          .topic-list-data {
+            padding: 0;
+            max-width: unset;
+            .pull-left {
+              display: none;
+            }
+
+            .right {
+              margin: 0;
+              .topic-item-stats {
+                display: none;
+              }
+
+              .main-link {
+                width: calc(100% - 24px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.custom-homepage-columns {
+  .col-0::before {
+    content: "";
+    background-image: url($plugs_icon);
+    display: flex;
+    height: 64px;
+    width: 64px;
+    margin-bottom: 24px;
+  }
+
+  .col-1::before {
+    content: "";
+    background-image: url($sparkle_icon);
+    display: flex;
+    height: 64px;
+    width: 64px;
+    margin-bottom: 24px;
+  }
+
+  .col-2::before {
+    content: "";
+    background-image: url($users_three_icon);
+    display: flex;
+    height: 64px;
+    width: 64px;
+    margin-bottom: 24px;
+  }
+
+  .col {
+    background-color: $card_background_color;
+    padding: 32px 0 0 32px;
+
+    .header-wrapper {
+      .feed-link {
+        display: none;
+      }
+
+      .btn {
+        display: none;
+      }
+    }
+
+    .header-wrapper {
+      padding: 24px 0;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $text_color;
+        margin: 0;
+      }
+    }
+
+    .topic-list {
+      .topic-list-body {
+        .topic-list-item {
+          border-color: $border_color;
+          &:nth-child(odd) {
+            background: transparent;
+          }
+          .posters,
+          .num.posts-map.posts,
+          .num.views,
+          .num.activity {
+            display: none;
+          }
+
+          &:last-child {
+            border: none;
+          }
+
+          .main-link {
+            padding: 24px 24px 24px 0;
+
+            .topic-statuses {
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .topic-status {
+                .d-icon {
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: $text_color;
+                }
+              }
+            }
+
+            .title.raw-link {
+              height: 20px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              padding: 0;
+
+              font-weight: 400;
+              font-size: 14px;
+              color: $text_color;
+              line-height: 20px;
+              display: flex;
+              justify-content: space-between;
+            }
+
+            &:hover {
+              cursor: pointer;
+              .topic-statuses {
+                .topic-status {
+                  .d-icon {
+                    color: $hover_text_color;
+                  }
+                }
+              }
+
+              .title.raw-link {
+                color: $hover_text_color;
+                &::after {
+                  content: "↗";
+                  color: $hover_text_color;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

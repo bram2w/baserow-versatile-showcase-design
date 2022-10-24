@@ -1,0 +1,8 @@
+text_color:
+  default: "#4D535C"
+border_color:
+  default: "#D9DBDE"
+card_background_color:
+  default: "#F5F5F5"
+hover_text_color:
+  default: "#198DD6"

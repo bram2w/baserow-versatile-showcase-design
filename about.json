@@ -1,0 +1,11 @@
+{
+  "about_url": null,
+  "license_url": null,
+  "assets": {
+    "plugs_icon": "assets/Plugs.png",
+    "sparkle_icon": "assets/Sparkle.png",
+    "users_three_icon": "assets/UsersThree.png"
+  },
+  "name": "Baserow Versatile Showcase Design",
+  "component": true
+}

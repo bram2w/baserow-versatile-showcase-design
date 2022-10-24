@@ -1,0 +1,8 @@
+en:
+  theme_metadata:
+    description: "This component adds custom styling to versatile showcase theme component"
+    settings:
+      text_color: Text color used in cards
+      border_color: Border color used in cards
+      card_background_color: Background color for cards
+      hover_text_color: Hover text color used in cards

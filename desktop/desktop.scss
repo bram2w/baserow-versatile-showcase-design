@@ -1,0 +1,55 @@
+.custom-homepage-columns {
+  column-gap: 32px;
+  display: flex;
+  height: 394px;
+  max-height: 394px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+
+  .col {
+    min-width: 310px;
+    max-width: 310px;
+    height: 362px;
+
+    .topic-list {
+      .topic-list-header {
+        display: none;
+      }
+
+      .topic-list-body {
+        .topic-list-item {
+          .main-link {
+            .link-bottom-line {
+              display: none;
+            }
+
+            &:hover {
+              cursor: pointer;
+              .link-top-line {
+                .topic-statuses {
+                  .topic-status {
+                    .d-icon {
+                      color: $hover_text_color;
+                    }
+                  }
+                }
+
+                .title.raw-link {
+                  color: $hover_text_color;
+                  &::after {
+                    content: "↗";
+                    color: $hover_text_color;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
