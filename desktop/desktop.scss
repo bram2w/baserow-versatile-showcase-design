@@ -1,5 +1,5 @@
 .custom-homepage-columns {
-  column-gap: 32px;
+  column-gap: 32px !important;
   display: flex;
   height: 394px;
   max-height: 394px;
@@ -10,7 +10,7 @@
   .col {
     min-width: 310px;
     max-width: 310px;
-    flex: none;
+    flex: none !important;
     height: 362px;
 
     .topic-list {
