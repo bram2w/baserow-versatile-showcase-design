@@ -13,12 +13,9 @@
 
             .right {
               margin: 0;
-              .topic-item-stats {
+              .topic-item-stats,
+              .pull-right {
                 display: none;
-              }
-
-              .main-link {
-                width: calc(100% - 24px);
               }
             }
           }
