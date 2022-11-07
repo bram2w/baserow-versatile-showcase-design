@@ -1,5 +1,5 @@
-.custom-homepage-columns {
-  column-gap: 32px !important;
+div.custom-homepage-columns {
+  column-gap: 32px;
   display: flex;
   height: 394px;
   max-height: 394px;
@@ -7,10 +7,10 @@
   flex-wrap: wrap;
   overflow-y: hidden;
 
-  .col {
+  div.col {
     min-width: 310px;
     max-width: 310px;
-    flex: none !important;
+    flex: none;
     height: 362px;
 
     .topic-list {
@@ -20,7 +20,6 @@
 
       .topic-list-body {
         tr.topic-list-item {
-          border-color: $border_color;
           &:nth-child(odd) {
             background: transparent;
           }
@@ -31,13 +30,7 @@
             display: none;
           }
 
-          &:last-child {
-            border: none;
-          }
-
           .main-link {
-            padding: 24px 24px 24px 0;
-            width: calc(100% - 24px);
             display: inline-flex;
             justify-content: space-between;
 
@@ -47,37 +40,13 @@
 
             .link-top-line {
               width: calc(100% - 28px);
-              .topic-statuses {
-                height: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .topic-status {
-                  .d-icon {
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: $text_color;
-                  }
-                }
-              }
-
-              .title.raw-link {
-                height: 20px;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-
-                padding: 0;
-                font-weight: 400;
-                font-size: 14px;
-                color: $text_color;
-                line-height: 20px;
-              }
             }
 
             &::after {
               content: "↗";
+              display: flex;
+              justify-content: center;
+              align-items: center;
               color: $hover_text_color;
               font-weight: 400;
               font-size: 14px;
