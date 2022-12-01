@@ -1,34 +1,9 @@
 .custom-homepage-columns {
-  .col-0::before {
-    content: "";
-    background-image: url($plugs_icon);
-    display: flex;
-    height: 64px;
-    width: 64px;
-  }
-
-  .col-1::before {
-    content: "";
-    background-image: url($sparkle_icon);
-    display: flex;
-    height: 64px;
-    width: 64px;
-  }
-
-  .col-2::before {
-    content: "";
-    background-image: url($users_three_icon);
-    display: flex;
-    height: 64px;
-    width: 64px;
-  }
-
   .col {
     background-color: $card_background_color;
     padding: 32px 0 0 32px;
 
     .header-wrapper {
-      padding: 24px 0 0;
       .feed-link {
         display: none;
       }
